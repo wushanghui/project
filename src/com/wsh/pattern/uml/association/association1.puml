@@ -1,0 +1,5 @@
+@startuml
+
+Person "1" --> "1" IDCart : "单向一对一关系"
+
+@enduml

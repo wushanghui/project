@@ -1,0 +1,17 @@
+@startuml
+
+class Computer
+class Monitor
+class Mouse
+
+Computer o-- Monitor
+Computer o-- Mouse
+
+class Computer {
+-mouse: Mouse
+-monitor: Monitor
++setMouse(mouse: Mouse): void
++setMonitor(monitor: Monitor): void
+}
+
+@enduml

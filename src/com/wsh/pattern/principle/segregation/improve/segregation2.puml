@@ -1,0 +1,32 @@
+@startuml
+
+interface interface1
+interface interface2
+interface interface3
+class A
+class B
+class C
+class D
+
+interface1 <|.. B
+interface2 <|.. B
+interface1 <|.. D
+interface3 <|.. D
+A ..> interface1
+A ..> interface2
+C ..> interface1
+C ..> interface3
+
+interface interface1 {
+    void operation1()
+}
+interface interface2 {
+    void operation2()
+    void operation3()
+}
+interface interface3 {
+    void operation4()
+    void operation5()
+}
+
+@enduml
