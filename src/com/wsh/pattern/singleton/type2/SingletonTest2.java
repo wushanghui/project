@@ -6,7 +6,7 @@ package com.wsh.pattern.singleton.type2;
  * @author wsh
  * @date 2019-07-12 23:31
  */
-public class SingletonTest02 {
+public class SingletonTest2 {
 
     public static void main(String[] args) {
         //测试
