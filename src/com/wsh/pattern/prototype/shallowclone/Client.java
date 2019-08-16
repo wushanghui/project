@@ -1,4 +1,4 @@
-package com.wsh.pattern.prototype.improve;
+package com.wsh.pattern.prototype.shallowclone;
 
 /**
  * @author：Administrator
