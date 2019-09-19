@@ -3,7 +3,7 @@ package com.wsh.pattern.prototype.shallowclone;
 /**
  * @author：Administrator
  * @date：2019/8/13
- * @describe：
+ * @describe：浅拷贝
  */
 public class Client {
 

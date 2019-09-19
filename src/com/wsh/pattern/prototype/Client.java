@@ -3,7 +3,7 @@ package com.wsh.pattern.prototype;
 /**
  * @author：Administrator
  * @date：2019/8/13
- * @describe：
+ * @describe：传统方式解决克隆羊问题
  */
 public class Client {
 

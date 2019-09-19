@@ -5,7 +5,7 @@ import com.wsh.pattern.prototype.shallowclone.Sheep;
 /**
  * @author：Administrator
  * @date：2019/8/13
- * @describe：测试类
+ * @describe：深拷贝
  */
 public class Client {
 
