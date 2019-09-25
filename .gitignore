@@ -3,7 +3,7 @@
 *.classpath
 *.project
 */target
-.idea
+.idea/
 */.mvn/*
 */mvnw
 */mvnw.cmd

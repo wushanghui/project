@@ -1,7 +1,13 @@
 package com.wsh.test.date;
 
+import org.junit.Test;
+
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * 日期 测试 class
@@ -40,5 +46,53 @@ public class CalendarTest {
             System.out.println();
         }
 
+    }
+
+    /**
+     * java Calendar 类 测试
+     */
+    @Test
+    public void CalendarTest1() {
+        Date date = new Date();
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(date);
+        CostSystemReqDto dto = new CostSystemReqDto();
+        dto.setPolicy("ppp00011");
+        dto.setSignDate(calendar);
+        Map<String, Object> map = new HashMap<>();
+        map.put("costSystemReqDto", dto);
+        System.out.println("--------------");
+        CostSystemReqDto dto1 = (CostSystemReqDto) map.get("costSystemReqDto");
+        System.out.println(dto1);
+    }
+}
+
+class CostSystemReqDto {
+
+    private String policy;
+    private Calendar signDate;
+
+    public String getPolicy() {
+        return policy;
+    }
+
+    public void setPolicy(String policy) {
+        this.policy = policy;
+    }
+
+    public Calendar getSignDate() {
+        return signDate;
+    }
+
+    public void setSignDate(Calendar signDate) {
+        this.signDate = signDate;
+    }
+
+    @Override
+    public String toString() {
+        return "CostSystemReqDto{" +
+                "policy='" + policy + '\'' +
+                ", signDate=" + signDate +
+                '}';
     }
 }
